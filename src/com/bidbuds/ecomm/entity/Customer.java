@@ -13,7 +13,7 @@ public class Customer {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id")
+	@Column(name="cust_id")
 	private int cust_id;
 	
 	@Column(name="first_name")
@@ -30,6 +30,9 @@ public class Customer {
 	private String password;
 
 
+	@Column(name="address")
+	private String address;
+
 	
 	
 	public Customer() {
@@ -37,35 +40,54 @@ public class Customer {
 	}
 
 
-	public Customer(int id, String firstName, String lastName, String email, String password) {
-		super();
-		this.cust_id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.password = password;
-	}
+
 	
 
-	public Customer(String firstName, String lastName, String email, String password) {
+	public Customer(String firstName, String lastName, String email, String password, String address) {
 		super();
 
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
+		this.address = address;
 	}
 
 
+	
+	
 
-	public int getId() {
+	public int getCust_id() {
 		return cust_id;
 	}
 
 
-	public void setId(int id) {
-		this.cust_id = id;
+
+
+	public void setCust_id(int cust_id) {
+		this.cust_id = cust_id;
 	}
+
+
+
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+
+
+
 
 
 	public String getFirstName() {

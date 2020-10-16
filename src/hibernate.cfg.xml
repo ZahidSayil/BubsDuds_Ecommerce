@@ -13,7 +13,7 @@
         <property name="connection.password">ecommerceapp</property>
 
         <!-- JDBC connection pool settings ... using built-in test pool -->
-        <property name="connection.pool_size">1</property>
+        <property name="connection.pool_size">100</property>
 
         <!-- Select our SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
@@ -29,6 +29,9 @@
 		<property name="current_session_context_class">thread</property>
 		
 		  <mapping class="com.bidbuds.ecomm.entity.Customer"/>
+		  <mapping class="com.bidbuds.ecomm.entity.Product"/>
+ 		 <mapping class="com.bidbuds.ecomm.entity.Category"/>
+ 
  
     </session-factory>
 
