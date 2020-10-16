@@ -21,12 +21,17 @@ Customer user1 =  (Customer)session.getAttribute("currentLoggedCustomer");
 <meta charset="UTF-8">
 <%@ include file="header.jsp" %>
 
+
 </head>
 <body>
 
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.jsp">BidBuds Toys</a>
+<nav class="navbar sticky-top navbar-expand-lg class="navbar navbar-light" style="background-color: #e3f2fd;"">
+  <a class="navbar-brand" href="index.jsp">
+  <span> Bid</span>
+ <img src="images/doll.svg" width="30" height="30" class="d-inline-block align-top">
+ <span> Buds</span>
+</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -34,11 +39,9 @@ Customer user1 =  (Customer)session.getAttribute("currentLoggedCustomer");
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.jsp">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.jsp">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Categories</a>
-      </li>
+    
       
         <li class="nav-item">
         <a class="nav-link" href="#">About Us</a>
