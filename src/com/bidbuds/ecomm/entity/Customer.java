@@ -32,30 +32,30 @@ public class Customer {
 
 	@Column(name="address")
 	private String address;
-
 	
+	@Column(name="role")
+	private String role;
+
 	
 	public Customer() {
 		super();
 	}
 
-
-
+	
 	
 
-	public Customer(String firstName, String lastName, String email, String password, String address) {
+	public Customer(String firstName, String lastName, String email, String password, String address, String role) {
 		super();
-
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
 		this.address = address;
+		this.role = role;
 	}
 
 
-	
-	
+
 
 	public int getCust_id() {
 		return cust_id;
@@ -63,30 +63,9 @@ public class Customer {
 
 
 
-
 	public void setCust_id(int cust_id) {
 		this.cust_id = cust_id;
 	}
-
-
-
-
-
-	public String getAddress() {
-		return address;
-	}
-
-
-
-
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-
-
-
 
 
 
@@ -128,8 +107,32 @@ public class Customer {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+	public String getRole() {
+		return role;
+	}
+
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+
+
 	
-	
+
+
 	
 }
 

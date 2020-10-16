@@ -5,13 +5,12 @@
 <head>
 <meta charset="UTF-8">
 
-<%@ include file="header.jsp" %>
+<%@ include file= "jsp/header.jsp"%>
 <title>login Pages</title>
 </head>
 <body>
 
-<%@ include file="navbar.jsp" %>
-
+<%@ include file="jsp/navbar.jsp" %>
 
 
 <div class="container-fluid h-100 mt-5">
@@ -19,6 +18,8 @@
         <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <form action="LoginServlet" method="post">
 
+
+ 				<%@include file="jsp/message.jsp" %> 
                 <div class="form-group">
                     <input class="form-control form-control-lg" name="email" placeholder="User email" type="text">
                 </div>

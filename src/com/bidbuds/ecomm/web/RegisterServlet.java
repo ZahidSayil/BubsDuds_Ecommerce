@@ -48,10 +48,10 @@ public class RegisterServlet extends HttpServlet {
 			}
 			
 			//creating customer object to store in the db
-			Customer customer = new Customer(fname,lname,email,password,address);
+			Customer customer = new Customer(fname,lname,email,password,address,"normal");
 			
 			CustomerDao  customerDao = new CustomerDao();
-			customerDao.saveUser(customer);
+			customerDao.saveCustomer(customer);
 			
 			HttpSession httpsession = request.getSession();
 			httpsession.setAttribute("message", "Registeration Successfull");

@@ -1,3 +1,18 @@
+
+<%@page import="com.bidbuds.ecomm.entity.Customer" %>
+
+<%
+
+//else if rendering for navigation
+
+Customer user1 =  (Customer)session.getAttribute("currentLoggedCustomer");
+
+%>
+
+
+
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -33,12 +48,45 @@
       <!-- login and register navigation -->
     
       <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      
+      <%
+      
+       if(user1 == null)
+    	   
+       {
+    	   %>
+    <li class="nav-item">
         <a class="nav-link" href="login.jsp">Login</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="register.jsp">Register</a>
       </li>
+      
+      
+    	   <% 
+       } else {
+    	   
+    	   
+    	 %>  
+    	   
+    	   
+    	<li class="nav-item">
+        <a class="nav-link" href="#"><%= user1.getLastName() %></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LogoutServlet">Logout</a>
+      </li> 
+    	   
+    	   
+    	   
+    	   
+    	   
+    	   <% 
+       }
+   
+      
+      %>
+   
       
       </ul>
   
