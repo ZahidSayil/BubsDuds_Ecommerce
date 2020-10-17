@@ -51,32 +51,31 @@ Customer user1 =  (Customer)session.getAttribute("currentLoggedCustomer");
       <!-- login and register navigation -->
     
       <ul class="navbar-nav">
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#!" data-toggle="modal" data-target="#cart"><i class="fa fa-cart-plus" style="font-size:22px"></i><span class="m1-1 cart-items" >( 0 )</span></a>
-      </li>
-      
-      
-      <%
+
+
+
+				<%
       
        if(user1 == null)
     	   
        {
     	   %>
-    <li class="nav-item">
-        <a class="nav-link" href="login.jsp">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="register.jsp">Register</a>
-      </li>
-      
-      
-    	   <% 
-       } else {
-    	   
-    	   
-    	 %>  
-    	   
+
+			
+
+				<li class="nav-item"><a class="nav-link" href="login.jsp">Login</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="register.jsp">Register</a>
+				</li>
+
+
+				<%
+					} else {
+				%>  
+    	   	<li class="nav-item"><a class="nav-link" href="#!"
+					data-toggle="modal" data-target="#cart"><i
+						class="fa fa-cart-plus" style="font-size: 22px"></i><span
+						class="m1-1 cart-items">( 0 )</span></a></li>
     	   
     	<li class="nav-item">
         <a class="nav-link" href="#"><%= user1.getLastName() %></a>
