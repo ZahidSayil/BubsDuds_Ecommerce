@@ -37,7 +37,7 @@ Customer user1 =  (Customer)session.getAttribute("currentLoggedCustomer");
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="index.jsp">Home</a>
       </li>
@@ -50,7 +50,12 @@ Customer user1 =  (Customer)session.getAttribute("currentLoggedCustomer");
       
       <!-- login and register navigation -->
     
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#!" data-toggle="modal" data-target="#cart"><i class="fa fa-cart-plus" style="font-size:22px"></i><span class="m1-1 cart-items" >( 0 )</span></a>
+      </li>
+      
       
       <%
       

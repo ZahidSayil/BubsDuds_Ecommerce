@@ -97,14 +97,16 @@
 				
 				
 				<div class="card">
- 					<img class="card-img-top p-2" style="max-height: 250px; max-width: 100%" src="<%= p.getImage_url() %>"  alt="Card image cap">
+					<div style="display: flex;justify-content: center;">
+						<img class="card-img-top p-2" style="height: 220px; max-width: 100%" src="<%= p.getImage_url() %>"  alt="Card image cap">
+					</div>
   					<div class="card-body">
    					<h5 class="card-title"><%= p.getName() %></h5>
   					<p class="card-text"><%=p.getDescription() %></p>
   					</div>
   					
   					<div class="card-footer">
-  						<button href="#" class="btn btn-primary">Add to Cart </button>
+  						<button href="#" class="btn btn-primary" onclick="add_to_cart(<%=p.getId()%>,'<%=p.getName()%>',<%=p.getPrice()%>)">Add to Cart </button>
   						<button class="btn btn-outline-success ml-3"> $ <%= p.getPrice() %></button>
   					</div>
 				</div>
@@ -142,5 +144,6 @@
 
 </div>
 
+<%@ include file="jsp/common_modals.jsp" %>
 </body>
 </html>
