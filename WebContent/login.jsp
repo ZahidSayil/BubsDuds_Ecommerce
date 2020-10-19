@@ -15,7 +15,7 @@
 
 <div class="container-fluid h-100 mt-5">
     <div class="row justify-content-center align-items-center h-100">
-        <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-md-4">
             <form action="LoginServlet" method="post">
 
 

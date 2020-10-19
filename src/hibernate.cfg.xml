@@ -8,10 +8,9 @@
 
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/bidbuds</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password">root</property>
-
+        <property name="connection.url">jdbc:mysql://localhost:3306/bidbuds?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="connection.username">ecommerceapp</property>
+        <property name="connection.password">ecommerceapp</property>
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">100</property>
 
@@ -20,7 +19,7 @@
         
         <!-- auto create table -->
 
-	<property name="hibernate.hbm2ddl.auto">update</property>
+	<property name="hibernate.hbm2ddl.auto">create-drop</property>
 		
         <!-- Echo the SQL to stdout -->
         <property name="show_sql">true</property>

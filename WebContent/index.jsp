@@ -21,7 +21,7 @@
 
 <%@ include file="jsp/navbar.jsp" %>
 
-<div class = "container mt-5">
+<div class = " mt-5">
 
 <div class="row">
 
@@ -55,7 +55,7 @@
 
 <!-- Show categories  -->
 
-<div class="col-md-3" >
+<div class="col-md-2" >
 
 
 <div class="list-group">
@@ -76,7 +76,7 @@
 
 <!-- Show Prdoucts  -->
 
-<div class="col-md-9">
+<div class="col-md-10">
 
 
 	<!-- row -->
@@ -98,7 +98,7 @@
 				
 				<div class="card">
 					<div style="display: flex;justify-content: center;">
-						<img class="card-img-top p-2" style="height: 220px; max-width: 100%" src="<%= p.getImage_url() %>"  alt="Card image cap">
+						<img class="card-img-top" style="height: 220px; max-width: 100%" src="<%= p.getImage_url() %>"  alt="Card image cap">
 					</div>
   					<div class="card-body">
    					<h5 class="card-title"><%= p.getName() %></h5>

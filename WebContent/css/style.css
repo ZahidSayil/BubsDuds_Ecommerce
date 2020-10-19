@@ -1,0 +1,108 @@
+/*  styling about us page     */
+
+
+.about{
+	cursor: pointer;
+	background-color: #ef5350;
+	color: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.about h1 {
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+.about h2 {
+	opacity: .8;
+}
+.about span {
+	display: block;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	margin:auto;
+	border-radius:50%;  
+	font-size: 40px;
+	color: #FFFFFF;
+	opacity: 0.7;
+	background-color: #4C0822;
+	border: 2px solid #4C0822;
+
+	webkit-transition:all .5s ease;
+ 	moz-transition:all .5s ease;
+ 	os-transition:all .5s ease;
+ 	transition:all .5s ease;
+
+}
+.about-item:hover span{
+	opacity: 1;	
+	border: 2px solid #CC0039;
+	font-size: 42px;
+	-webkit-transform: scale(1.1,1.1) rotate(360deg) ;
+	-moz-transform: scale(1.1,1.1) rotate(360deg) ;
+	-o-transform: scale(1.1,1.1) rotate(360deg) ;
+	transform: scale(1.1,1.1) rotate(360deg) ;
+}
+.about-item:hover h2{
+	opacity: 1;
+	-webkit-transform: scale(1.1,1.1)  ;
+	-moz-transform: scale(1.1,1.1)  ;
+	-o-transform: scale(1.1,1.1)  ;
+	transform: scale(1.1,1.1) ;
+}
+.about .lead{
+	color:#e1bee7;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*  styling about us End    */
+
+ #toast{
+            min-width: 300px;
+            position: fixed;
+            bottom: 30px;
+            left:50%;
+            margin-left: -125px;
+            background: #333;
+            padding:15px;
+            color:white;
+            text-align: center;
+            z-index: 10000;
+            font-size:18px;
+            visibility: hidden;
+            box-shadow: 0px 0px 100px #000;
+
+
+        }
+
+        #toast.display{
+            visibility: visible;
+            animation: fadeIn 0.5s,fadeOut 0.5s 2.5s;
+        }
+
+        @keyframes fadeIn{
+            from{
+bottom: 0;
+opacity: 0;
+
+            }
+            to{
+bottom:30px;
+opacity: 1;
+            }
+        }
+
+
+        @keyframes fadeOut{
+            from{
+                bottom:30px;
+opacity: 1;  
+            }
+            to{bottom: 0;
+opacity: 0;}
+        }
+
+#navbarSupportedContent{
+	justify-content:space-between;
+}
